@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Audible</string>
+    <string name="title_home" />
+    <string name="title_favourites" />
+    <string name="title_menu" />
+    <string name="title_list" />
+    <string name="title_sort" />
+    <string name="loading">Загрузка</string>
+</resources>

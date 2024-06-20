@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_nav">#7FB5F4</color>
+    <color name="sepia">#FCF6E1</color>
+    <color name="sepia_text">#40331B</color>
+    <color name="old_paper">#E3C798</color>
+    <color name="dark_theme">#222222</color>
+    <color name="dark_theme_text">#E1E3E6</color>
+    <color name="accent">#F4BE7F</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="dark_gray">#6C6C6C</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

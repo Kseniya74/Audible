@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_notes"
+        android:icon="@drawable/ic_bookmark"
+        android:title="Notes"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_contents"
+        android:icon="@drawable/ic_contents"
+        android:title="Contents"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+</menu>

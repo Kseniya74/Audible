@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:exported="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Audible"
+        android:hardwareAccelerated="true"
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="31">
+        <activity
+            android:name="ru.yandex.speechkit.gui.RecognizerActivity"
+            android:exported="true">  <!-- Убедитесь, что android:exported явно указано -->
+        </activity>
+        <activity
+            android:name=".ui.favourites.FavouritesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notes.NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bookDetail.BookDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Audible" />
+        <activity android:name=".ui.toc.TableOfContentsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Audible"/>
+        <activity android:name=".ui.bookmarks.BookmarksActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Audible"/>
+        <activity
+            android:name=".ui.book.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

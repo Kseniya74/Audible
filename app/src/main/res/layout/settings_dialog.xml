@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settingsBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardMaxElevation="0dp"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Цвет фона"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/colorRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/lightThemeRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/light_theme"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="Светлая тема"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextcyr_medium"
+                            android:text="Светлая \n тема"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/darkThemeRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dark_theme"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="Темная тема"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextcyr_medium"
+                            android:text="Тёмная \n тема"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/sepiaRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sepia_theme"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="Сепия"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextcyr_medium"
+                            android:text="Сепия"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageButton
+                            android:id="@+id/oldPaperRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/old_paper_theme"
+                            android:background="@android:color/transparent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenirnextcyr_medium"
+                            android:text="Старая \nбумага"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DADADA"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Текст"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/avenirnextcyr_medium"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Размер шрифта"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:id="@+id/fontSizeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <Button
+                        android:id="@+id/decreaseFontSizeButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#F4BE7F"/>
+
+                    <Button
+                        android:id="@+id/increaseFontSizeButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#F4BE7F"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:text="Размер отступов"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:id="@+id/lineSpacingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.0"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <Button
+                        android:id="@+id/decreaseLineSpacingButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#F4BE7F"/>
+
+                    <Button
+                        android:id="@+id/increaseLineSpacingButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#F4BE7F"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DADADA"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Автопрокрутка страниц"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/autoScrollSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:checked="false"
+                        app:trackTint="#F4BE7F"
+                        app:thumbTint="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Скорость автопрокрутки"
+                        android:fontFamily="@font/avenirnextcyr_medium"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                    <Spinner
+                        android:id="@+id/scrollSpeedSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
